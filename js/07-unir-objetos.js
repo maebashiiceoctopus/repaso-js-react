@@ -13,8 +13,11 @@ const cliente={
 
 //const nuevoObjeto = Object.assign(producto,cliente);NO
 
-const nuevoObjetoDos={...producto,...cliente}
+const nuevoObjetoDos={producto: {...producto},cliente:{...cliente}}
 
 console.log(nuevoObjetoDos);
 console.log(cliente);
 console.log(producto);
+
+
+//evitar modificar los objetos  originales
